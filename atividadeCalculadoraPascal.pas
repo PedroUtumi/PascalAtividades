@@ -38,6 +38,6 @@ Begin
 						end;
 					end;
 	else
-    writeln('Opcao invalida');
+    	writeln('Opcao invalida');
   end;
 End.
