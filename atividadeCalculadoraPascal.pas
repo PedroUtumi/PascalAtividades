@@ -10,7 +10,7 @@ Begin
 	readln(num1);
 	write('Digite numero 2: ');
 	readln(num2);
-  write('Digite operacao: ');
+  	write('Digite operacao: ');
 	readln(operacao);
 	
 	case operacao of
@@ -29,7 +29,7 @@ Begin
 		'/': begin
 					if num2 = 0 then
 						begin
-							writeln('Não existe divisao por 0');
+							writeln('NÃ£o existe divisao por 0');
 						end
 					else
 						begin
