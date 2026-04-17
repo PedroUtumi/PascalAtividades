@@ -4,7 +4,7 @@ var
   numero, i: integer;
   isPrimo: boolean;
 
-begin
+Begin
   write('Digite o numero: ');
   readln(numero);
 
@@ -24,4 +24,4 @@ begin
   end;
 
   writeln('O numero ', numero, ' eh primo?: ', isPrimo);
-end.
+End.
