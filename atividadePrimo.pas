@@ -1,4 +1,4 @@
-program atividadePrimo;
+Program atividadePrimo;
 uses crt;
 var
   numero, i: integer;
