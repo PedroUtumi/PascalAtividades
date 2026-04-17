@@ -1,10 +1,10 @@
-Program atividadePrimo;
+program atividadePrimo;
 uses crt;
 var
   numero, i: integer;
   isPrimo: boolean;
 
-Begin
+begin
   write('Digite o numero: ');
   readln(numero);
 
@@ -24,4 +24,4 @@ Begin
   end;
 
   writeln('O numero ', numero, ' eh primo?: ', isPrimo);
-End.
+end.
