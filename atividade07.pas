@@ -1,8 +1,8 @@
-program atividadeIdade;
+program atividade07;
 
 var
   anoNascimento, anoAtual: array[1..3] of integer;
-  diaNasc, mesNasc, anoNasc, idade, meses: integer;
+  diaNasc, mesNasc, anoNasc, idade, meses, dias: integer;
 
 begin
   write('Qual dia voce nasceu: ');
@@ -18,24 +18,35 @@ begin
   anoNascimento[2] := mesNasc;
   anoNascimento[3] := anoNasc;
 
-  anoAtual[1] := 17; 
+  anoAtual[1] := 22; 
   anoAtual[2] := 4;
-  anoAtual[3] := 2026;
+  anoAtual[3] := 2026; 
 
   idade := anoAtual[3] - anoNascimento[3];
-
+  
+  if (anoNascimento[1] < anoAtual[1]) then
+    begin
+			dias := anoAtual[1] - anoNascimento[1];
+		end
+	else if (anoNascimento[1] = anoAtual[1]) then
+    begin
+			dias := 0;
+		end
+	else
+		meses := meses - 1;
+		dias := 30 + anoNascimento[1] - anoAtual[1];
+					
+		
+		
   if (anoAtual[2] < anoNascimento[2]) or ((anoAtual[2] = anoNascimento[2]) and (anoAtual[1] < anoNascimento[1])) then
   begin
     idade := idade - 1;
     meses := (12 - anoNascimento[2]) + anoAtual[2];
-
-    if (anoAtual[1] < anoNascimento[1]) then
-      meses := meses - 1;
   end
   else
   begin
     meses := anoAtual[2] - anoNascimento[2];
-    if (anoAtual[1] < anoNascimento[1]) then
+    if (anoAtual[1] > anoNascimento[1]) then
     begin
       if meses = 0 then
       begin
@@ -47,5 +58,5 @@ begin
     end;
   end;
 
-  writeln('Sua idade e: ', idade, ' anos e ', meses, ' meses.');
+  writeln('Sua idade eh: ', idade, ' anos, ', meses, ' meses e ', dias, ' dias');
 end.

@@ -19,7 +19,9 @@ begin
   anoNascimento[2] := mesNasc;
   anoNascimento[3] := anoNasc;
 
-  anoAtual := [17, 4, 2026]; 
+  anoAtual[1] := 17; 
+  anoAtual[2] := 4;
+  anoAtual[3] := 2026;
 
   idade := anoAtual[3] - anoNascimento[3];
 
