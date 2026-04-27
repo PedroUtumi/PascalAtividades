@@ -39,6 +39,8 @@ Begin
   			else if (acertos = 4) or (acertos = 5)  then pontuacao := 25
   			else writeln('Mentiu')
   		end;
+  	else
+  		writeln('Alvo nao encontrado');  	  		
   end;	
   writeln('Alvo: ', alvo, ' | Acertos: ', acertos, ' | Pontuacao: ', pontuacao);	
   
