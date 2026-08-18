@@ -1,5 +1,5 @@
 Program atividade01;
-
+uses crt;
 var
 	num1, num2, num3, num4, soma: integer;
 

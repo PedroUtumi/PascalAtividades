@@ -1,4 +1,4 @@
-Program atividadeCalculadoraPascal;
+Program atividade12;
 uses crt;
 var
 	num1, num2, soma, multiplicacao, subtracao: integer;

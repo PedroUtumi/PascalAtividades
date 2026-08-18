@@ -1,5 +1,5 @@
 Program atividade02;
-
+uses crt;
 var
 	nota1, nota2, nota3, mediaAritmetica: real;
 
