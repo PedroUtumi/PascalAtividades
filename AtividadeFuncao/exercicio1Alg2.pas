@@ -1,4 +1,4 @@
-Program exercicio1;
+Program exercicio1Alg2;
 uses CRT;
 
 const
