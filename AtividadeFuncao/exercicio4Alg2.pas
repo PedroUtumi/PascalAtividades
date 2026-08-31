@@ -1,4 +1,4 @@
-Program exercicio1Alg2;
+Program exercicio4Alg2;
 uses CRT;
 
 const
@@ -19,7 +19,7 @@ function contarIntervalo(limiteInferior: integer; limiteSuperior: integer): inte
         if (arrayNumeros[j] >= limiteInferior) and (arrayNumeros[j] <= limiteSuperior) then contador := contador + 1; 
       end;
 
-    if contador = 0 then writeln('Não tem nenhum numero no array pertencente ao intervalo');
+    if contador = 0 then writeln('Não tem nenhum num+ero no array pertencente ao intervalo');
     contarIntervalo := contador;
   end;
 
